@@ -1,0 +1,22 @@
+{
+  "name": "chat-servers",
+  "version": "1.0.0",
+  "description": "Peer-to-peer chat servers using Socket.IO (JavaScript)",
+  "main": "server1.js",
+  "scripts": {
+    "start:server1": "node server1.js",
+    "start:server2": "node server2.js",
+    "start:all-servers": "concurrently \"npm run start:server1\" \"npm run start:server2\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
